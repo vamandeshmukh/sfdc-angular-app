@@ -6,7 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Vaman Deshmukh';
+  
+  title = 'sfdc-angular-app';
+  myName = 'Vaman Deshmukh';
+  myCity = 'Hyderabad';
+
 }
 
 
