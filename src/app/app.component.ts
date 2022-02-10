@@ -10,11 +10,16 @@ export class AppComponent {
   myName: string = 'Vaman Deshmukh';
   // server creation 
   allowNewServer: boolean = false;
+  serverStatus: string = "Not created";
 
   constructor() {
     setTimeout(() => {
       this.allowNewServer = true;
     }, 4000);
+  }
+
+  createServer = () => {
+    this.serverStatus = "Server created";
   }
 
 

@@ -2,9 +2,11 @@
   <p>App Component</p>
   <p> {{ myName }} </p>
   <p> {{ fun() }} </p>
-  <button [disabled]="!allowNewServer">Create Server</button>
+  <button [disabled]="!allowNewServer" (click)="createServer()">Create Server</button>
   <p></p>
   <p> {{ allowNewServer }} </p>
+  <p> {{ serverStatus }} </p>
+  <button (click)="createServer()">Create Server</button>
 </div>
 
 <!-- <app-header></app-header>
