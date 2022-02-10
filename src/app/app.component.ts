@@ -11,11 +11,14 @@ import { Component } from '@angular/core';
 // header.component.ts   
 // these four files together are called as header component 
 
-@Component({
+@Component(
+  {
   selector: 'app-root',
-  templateUrl: './app.component.html',
+  // templateUrl: './app.component.html',
+  template: '<p>Some dummy text</p>',
   styleUrls: ['./app.component.css']
-})
+}
+)
 
 export class AppComponent {
   
