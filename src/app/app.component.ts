@@ -11,12 +11,12 @@ import { Component } from '@angular/core';
 // header.component.ts   
 // these four files together are called as header component 
 
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
 export class AppComponent {
   
   title = 'sfdc-angular-app';
