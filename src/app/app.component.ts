@@ -7,25 +7,27 @@ import { Component } from '@angular/core';
 // e.g. for header component - 
 // header.component.css  
 // header.component.html - also called as template 
-// header.component.spec.ts - also called as component 
-// header.component.ts   
+// header.component.spec.ts 
+// header.component.ts - also called as component   
 // these four files together are called as header component 
 
-@Component(
-  {
+@Component({
   selector: 'app-root',
-  // templateUrl: './app.component.html',
-  template: '<p>Some dummy text</p>',
+  templateUrl: './app.component.html',
+  // template: '<p>Some dummy text</p>',
   styleUrls: ['./app.component.css']
-}
-)
-
+  // styles: ['{color:blue}'] 
+})
 export class AppComponent {
-  
+
   title = 'sfdc-angular-app';
   myName = 'Vaman Deshmukh';
   myCity = 'Hyderabad';
   mySalary = 10.5;
+
+  fun = () => {
+    alert('Hi!');
+  }
 
 }
 
