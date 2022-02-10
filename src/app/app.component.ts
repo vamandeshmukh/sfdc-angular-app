@@ -8,6 +8,14 @@ export class AppComponent {
 
   title: string = 'sfdc-angular-app';
   myName: string = 'Vaman Deshmukh';
+  // server creation 
+  allowNewServer: boolean = false;
+
+  constructor() {
+    setTimeout(() => {
+      this.allowNewServer = true;
+    }, 4000);
+  }
 
 
   fun = (): string => {
