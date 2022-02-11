@@ -1,5 +1,6 @@
+
 <div class="container">
-  <p>App Component</p>
+  <h1>App Component</h1>
   <p> {{ myName }} </p>
   <p> {{ fun() }} </p>
   <button class="btn btn-primary" [disabled]="!allowNewServer" (click)="createServer()">Create Server</button>
@@ -11,8 +12,16 @@
   <input type="text" (input)="getServerName($event)">
   <p>Enter details - </p>
   <input type="text" [(ngModel)]="serverName">
+  <br />
+  <br />
+  <button (click)="onDisplayOrHideFunction()" >Display or hide</button>
+
+  <p *ngIf="displayOrHide">Display using *ngIf structural directive</p>
+  <p *ngIf="!displayOrHide">Hide using *ngIf structural directive</p>
 
 </div>
+
+
 
 <!-- <app-header></app-header>
 

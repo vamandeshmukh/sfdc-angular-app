@@ -12,6 +12,7 @@ export class AppComponent {
   allowNewServer: boolean = false;
   serverStatus: string = "Not created";
   serverName: string = '';
+  displayOrHide: boolean = false;
 
   constructor() {
     setTimeout(() => {
@@ -30,6 +31,10 @@ export class AppComponent {
   getServerName = (event: any) => {
     console.log(event.target.value);
     this.serverName = event.target.value;
+  }
+
+  onDisplayOrHideFunction =() => {
+    this.displayOrHide = !this.displayOrHide;
   }
 
 }
