@@ -8,7 +8,9 @@
   <p> {{ serverStatus }} </p>
 
   <p>Server name is {{serverName}} </p>
-  <input type="text" (input)="getServerName($event)" >
+  <input type="text" (input)="getServerName($event)">
+  <p>Enter details - </p>
+  <input type="text" [(ngModel)]="serverName">
 
 </div>
 
