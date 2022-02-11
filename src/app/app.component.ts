@@ -11,6 +11,7 @@ export class AppComponent {
   // server creation 
   allowNewServer: boolean = false;
   serverStatus: string = "Not created";
+  serverName: string = '';
 
   constructor() {
     setTimeout(() => {
@@ -22,9 +23,13 @@ export class AppComponent {
     this.serverStatus = "Server created";
   }
 
-
   fun = (): string => {
     return 'data from fun method';
+  }
+
+  getServerName = (event: any) => {
+    console.log(event.target.value);
+    this.serverName = event.target.value;
   }
 
 }
