@@ -1,3 +1,7 @@
+// add routing to the app -
+// https://angular.io/guide/router
+
+
 import { Component } from '@angular/core';
 
 @Component({
