@@ -10,6 +10,7 @@ import { EmployeeComponent } from './employee/employee.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { Page404Component } from './page404/page404.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { Page404Component } from './page404/page404.component';
     EmployeeComponent,
     LoginComponent,
     RegisterComponent,
-    Page404Component
+    Page404Component,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
