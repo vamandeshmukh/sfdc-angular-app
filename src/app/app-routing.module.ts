@@ -7,6 +7,7 @@ import { Page404Component } from './page404/page404.component';
 import { RegisterComponent } from './register/register.component';
 
 const routes: Routes = [
+  { path: 'home', component: HomeComponent },
   { path: 'employee', component: EmployeeComponent },
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
