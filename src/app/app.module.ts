@@ -11,6 +11,10 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { Page404Component } from './page404/page404.component';
 import { HomeComponent } from './home/home.component';
+import { UserComponent } from './user/user.component';
+import { HttpClientModule } from '@angular/common/http';
+
+
 
 @NgModule({
   declarations: [
@@ -21,10 +25,12 @@ import { HomeComponent } from './home/home.component';
     LoginComponent,
     RegisterComponent,
     Page404Component,
-    HomeComponent
+    HomeComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule, 
     FormsModule
   ],
