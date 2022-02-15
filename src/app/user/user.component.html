@@ -2,6 +2,13 @@
     <div class="col-4 mt-3">
         <h1 class="display-4 text-primary mb-3 pb-3">User</h1>
     </div>
+    <p>Enter userId to search:</p>
+    <form>
+        <input type="number" [(ngModel)]="userIdInput" name="userIdInput" placeholder="Please Enter UserId">
+        <input type="submit" (click)="getUser()">
+
+    </form>
+
     <div>
         <p> The username is: {{ username }} </p>
     </div>

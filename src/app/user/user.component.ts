@@ -10,17 +10,18 @@ import { UserService } from './user.service';
 export class UserComponent implements OnInit {
 
   username: string = '';
+  userIdInput: any;
 
   constructor(private userService: UserService) { }
 
   getUser = () => {
     console.log('getUser');
-    this.userService.getUserById()
+    this.userService.getUserById(this.userIdInput)
       .subscribe((obj) => { this.username = obj.username });
   }
 
   ngOnInit(): void {
-    this.getUser();
+    // this.getUser(2);
   }
 
 }
