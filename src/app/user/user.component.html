@@ -11,7 +11,8 @@
             </form>
         </div>
         <div>
-            <p> The username is: {{ username }} </p>
+            <p> The username is: {{ appUser.username }} </p>
+            <p>{{ appUser | json }}</p>
         </div>
 
     </div>
