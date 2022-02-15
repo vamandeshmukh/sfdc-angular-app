@@ -9,8 +9,8 @@ import { UserService } from './user.service';
 })
 export class UserComponent implements OnInit {
 
-  username: string = '';
   userIdInput: any;
+
   appUser: AppUser = {
     username: '',
     email: '',
