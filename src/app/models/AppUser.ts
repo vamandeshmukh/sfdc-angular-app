@@ -12,5 +12,4 @@ export class AppUser {
         this.address = address;
         this.phone = phone;
     }
-
 }
