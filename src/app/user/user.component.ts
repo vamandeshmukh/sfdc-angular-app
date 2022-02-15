@@ -9,19 +9,14 @@ import { UserService } from './user.service';
 })
 export class UserComponent implements OnInit {
 
-  appUser: AppUser = {
-    username: '',
-    email: '',
-    address: {},
-    phone: ''
-  };
+  username: string = '';
 
   constructor(private userService: UserService) { }
 
   getUsers = () => {
     console.log('getUsers');
-    return this.userService.getUserById(1)
-      .subscribe((u) => { this.appUser = u });
+    return this.userService.getUserById(3)
+      .subscribe((u) => { this.username = u.username });
   }
 
   ngOnInit(): void {
